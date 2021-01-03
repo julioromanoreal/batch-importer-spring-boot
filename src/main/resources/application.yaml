@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/batch
+    username: user
+    password: pass
+    driver-class-name: org.postgresql.Driver
+
+application:
+  file-delimiter: ç
+  sales-data-in-dir: ./data/in/
+  sales-data-out-dir: ./data/out/
